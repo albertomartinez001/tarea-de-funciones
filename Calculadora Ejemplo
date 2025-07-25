@@ -1,0 +1,69 @@
+//Alberto Martinez ejemplo del ejercicio hecho en clase
+
+
+class Calculadora {
+    // Atributos que el ing pablo dio en clase
+    private String pantalla;
+    private boolean bateria;
+    private int botones;
+
+    // Constructor
+    public Calculadora(String pantalla, boolean bateria, int botones) {
+        this.pantalla = pantalla;
+        this.bateria = bateria;
+        this.botones = botones;
+    }
+
+    // Métodos comunes que el ing pablo menciono en clase
+    public void encender() {}
+    public void apagar() {}
+    public void limpiarPantalla() {}
+}
+
+
+class CalculadoraBasica extends Calculadora {
+    public CalculadoraBasica(String pantalla, boolean bateria, int botones) {
+        super(pantalla, bateria, botones);
+    }
+}
+
+
+class CalculadoraAvanzada extends CalculadoraBasica {
+    public CalculadoraAvanzada(String pantalla, boolean bateria, int botones) {
+        super(pantalla, bateria, botones);
+    }
+}
+
+
+class CalculadoraTrigonometrica extends CalculadoraBasica {
+    public CalculadoraTrigonometrica(String pantalla, boolean bateria, int botones) {
+        super(pantalla, bateria, botones);
+    }
+
+    public void calcularSeno() {}
+    public void calcularCoseno() {}
+    public void calcularTangente() {}
+}
+
+
+class CalculadoraCalculo extends CalculadoraBasica {
+    public CalculadoraCalculo(String pantalla, boolean bateria, int botones) {
+        super(pantalla, bateria, botones);
+    }
+
+    public void funcionCuadratica() {}
+    public void calcularDerivada() {}
+    public void calcularIntegral() {}
+    public void funcionGraficar() {}
+}
+
+
+class CalculadoraCientifica extends CalculadoraBasica {
+    public CalculadoraCientifica(String pantalla, boolean bateria, int botones) {
+        super(pantalla, bateria, botones);
+    }
+
+    public void calcularPotencia() {}
+    public void elevarCuadrado() {}
+    public void calcularFactorial() {}
+}
